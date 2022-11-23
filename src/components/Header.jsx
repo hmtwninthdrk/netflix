@@ -1,4 +1,5 @@
 import logo from '../components/img/logo.png'
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <header className='header'>
@@ -21,7 +22,7 @@ const Header = () => {
                         <input type="search" id="query" name="q" placeholder="Search" className="poisk"/>
                         </form>
                         <button className="btn">Subscribe</button>
-                        <a href="#" className="login">LOG IN</a>
+                        <Link to = "/log" className="login">LOG IN</Link>
                     </div>
                 </div>
             </div>
