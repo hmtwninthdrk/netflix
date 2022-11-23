@@ -11,8 +11,7 @@ function App() {
             <Header />
             <Intro />
             <Main />
-            <div>Hello World! This is Ainur!!!</div>
-
+            <div>Hello World</div>
             <Footer />
         </>
     )
