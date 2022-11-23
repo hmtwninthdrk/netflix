@@ -12,6 +12,7 @@ function App() {
             <Intro />
             <Main />
             <div>This is react project</div>
+            <div>This is Ainur!</div>
             <Footer />
         </>
     )
