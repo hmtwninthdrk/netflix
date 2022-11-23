@@ -11,7 +11,7 @@ function App() {
             <Header />
             <Intro />
             <Main />
-            <div>Hello World</div>
+            <div>This is react project</div>
             <Footer />
         </>
     )
