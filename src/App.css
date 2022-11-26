@@ -47,12 +47,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 .menu{
     display: flex;
+    gap:35px;
 }
 
 .menu li a {
     color: white;
     transition: all 0.9s ease-in-out;
-    margin-right: 25px;
 }
 
 .menu li a:hover{
@@ -292,5 +292,47 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     color: #fff;
     font-size: 20px;
   }
-  
-  
+.modal-btn {
+    background-color: #000000;
+    color:white;
+    border-style: none;
+    align-items: center;
+    width: 25px;
+    position: absolute;
+    bottom:2px;
+}
+.menu li {
+    position: relative;
+}
+.modal {
+    height: 100vh;
+    width: 60vh;
+    background-color: rgba(0,0,0,0);
+    position: fixed;
+    top: -220px;
+    left: 320px;
+    display: flex;
+    transform: scale(0);
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.modal.active {
+    transform: scale(1);
+}
+.modal__content {
+    padding: 20px;
+    border-radius:12px;
+    background-color: white;
+    width: 50vw;
+    transform: scale(0.5);
+    transition: 0.4s all;
+
+}
+.modal__content.active {
+    transform: scale(1);
+}
+.table {
+    border-spacing: 30px;
+    border-collapse: separate;
+}
