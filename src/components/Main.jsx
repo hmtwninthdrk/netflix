@@ -1,6 +1,7 @@
 import second from '../components/img/ph1.jpg'
 import trendsData from '../data/trendsData';
 import seriesData from '../data/seriesData';
+import { Link } from 'react-router-dom';
 import animeData from '../data/animeData';
 const Main= ()=>{
     return(
@@ -8,7 +9,7 @@ const Main= ()=>{
             <div className="container">
                 <div className="main_head">
                     <div className="m_title">Latest and Trending</div>
-                    <a href="#" className="m_view">View all</a>
+                    <Link to="movies" className="m_view">View all</Link>
                 </div>
 
                 <div className="main_inner">
@@ -16,8 +17,8 @@ const Main= ()=>{
                     trendsData.map((item,ind)=>(
                         <div className="main_item" key={ind}>
                         <img className='main_img' src={item.image} alt="" />
-                        <div className="m_suptitle">{item.title1}</div>
-                        <div className="m_titles">{item.title}</div>
+                        <div  className="m_suptitle">{item.title1}</div>
+                        <Link to='str' className="m_titles">{item.title}</Link>
                         <div className="m_suptitle">{item.title2}</div>
                     </div>
                     ))
@@ -35,7 +36,7 @@ const Main= ()=>{
                         <div className="main_item" key={ind}>
                         <img className='main_img' src={item.image} alt="" />
                         <div className="m_suptitle">{item.title1}</div>
-                        <div className="m_titles">{item.title}</div>
+                        <Link to='/sherlock' className="m_titles">{item.title}</Link>
                         <div className="m_suptitle">{item.title2}</div>
                     </div>
                     ))
@@ -53,7 +54,7 @@ const Main= ()=>{
                         <div className="main_item" key={ind}>
                         <img className='main_img' src={item.image} alt="" />
                         <div className="m_suptitle">{item.title1}</div>
-                        <div className="m_titles">{item.title}</div>
+                        <Link to='/dth' className="m_titles">{item.title}</Link>
                         <div className="m_suptitle">{item.title2}</div>
                     </div>
                     ))
