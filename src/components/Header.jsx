@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import React, {useState} from "react";
 import Modal from "./Modal/Modal";
 const Header = () => {
-    const [modalActive,setModalActive]=useState(true)
+    const [modalActive,setModalActive]=useState(false)
     return (
         <header className='header'>
             <div className="container">

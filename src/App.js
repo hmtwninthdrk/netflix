@@ -9,14 +9,14 @@ import {useState} from "react";
 
 
 function App() {
-    const [modalActive,setModalActive]=useState(true)
     return (
         <>
             <Header/>
             <Intro/>
             <Main/>
             <Footer/>
-            <Modal active={modalActive} setActive={setModalActive}/>
+
+
         </>
     )
 }
